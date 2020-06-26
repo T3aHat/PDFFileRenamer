@@ -1,7 +1,8 @@
 # PDFtitleRenamer  
 Rename pdf file name to article title.  
   
-  
+![sample.gif](https://github.com/T3aHat/PDFtitleRenamer/blob/master/image/sample.gif)
+
 # 機能  
 ウィンドウにDnDでファイルをリネーム候補に追加.フォルダをDnDすると,それ以下のフォルダ階層に含まれるすべての.pdfを追加.  
 __add_folder__  
