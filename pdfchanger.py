@@ -27,7 +27,7 @@ def rec_file_search(path):
                     plist.append(p)
                     titlelist.append(pdf.documentInfo.title)
                 else:
-                    print("Can't get title")
+                    print("Can't get title:"+str(p.name))
             except Exception as e:
                 print(path+str(e))
 
