@@ -42,7 +42,7 @@ def rename(self):
         if(os.path.exists(parent+title+".pdf")):
             while True:
                 if(not os.path.exists(parent+title+"("+str(i)+").pdf")):
-                    os.rename(path, parent+title+"("+str(i)+").pdf")
+                    os.rename(path, parent+p.name+'_'+title+"("+str(i)+").pdf")
                 else:
                     j += 1
         else:
@@ -152,7 +152,7 @@ class App(wx.Frame):
         if file.ShowModal() == wx.ID_OK:
             self.abs_path = file.GetPath()
             file.Destroy()
-            App.add(self.abs_path)
+            App.add(self, self.abs_path)
 
     def rename(self, event):
         for i in range(len(titlelist)):
